@@ -80,6 +80,9 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
 
 add_executable(absolute_location src/absolute_location.cpp)
 
@@ -91,7 +94,6 @@ add_executable(absolute_location src/absolute_location.cpp)
 target_link_libraries(absolute_location
    ${catkin_LIBRARIES}
 )
-
 
 
 #############
